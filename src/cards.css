@@ -51,6 +51,8 @@ html {
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    width: 710px;
+    justify-content: center;
   }
   
     .cardGroup__card {
@@ -72,3 +74,13 @@ html {
       flex-shrink: 0;
       flex-basis: auto;
     }
+    body{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    @media (max-width: 600px){
+      .cardGroup {
+        width: 320px; 
+      }
+      }
