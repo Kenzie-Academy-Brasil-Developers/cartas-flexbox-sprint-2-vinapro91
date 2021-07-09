@@ -1,5 +1,5 @@
 html {
-    font-family: "Raleway", "Helvetica", sans-serif;
+    font-family: Raleway, Helvetica, sans-serif;
     font-weight: 400;
     color: #2F3442;
     height: 100%;
@@ -51,15 +51,12 @@ html {
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
-    width: 710px;
+    width: 320px;
     justify-content: center;
   }
   
     .cardGroup__card {
-      /* flex-grow, flex-shrink, flex-basis */
-      flex-grow: 1;
-      flex-basis:auto;
-      flex-shrink: 0;
+      width: 33%;
       border: none;
       border-radius: 0;
     }
@@ -79,8 +76,27 @@ html {
       justify-content: center;
       align-content: center;
     }
-    @media (max-width: 600px){
+    @media screen and (min-width: 600px) {
       .cardGroup {
-        width: 320px; 
+        width: 710px;
+        
       }
+      .cardGroup__card {
+        
       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
