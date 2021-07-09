@@ -47,7 +47,8 @@ html {
 
 .cardGroup {
     /* display */
-    display:flex;  
+    display:flex;
+    flex-direction: column; 
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
@@ -56,9 +57,10 @@ html {
   }
   
     .cardGroup__card {
-      width: 33%;
+      width: 100%;
       border: none;
       border-radius: 0;
+      height: 30vh;
     }
   
     .cardGroup__card {
@@ -79,24 +81,10 @@ html {
     @media screen and (min-width: 600px) {
       .cardGroup {
         width: 710px;
-        
+        flex-direction: row;
       }
       .cardGroup__card {
-        
+        width: calc(100%/3)
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
